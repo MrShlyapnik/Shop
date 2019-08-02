@@ -9,7 +9,8 @@ class IndexList(ListView):
         context_object_name = 'products'
         objects=model.objects.all()
         return render(request, 'products/index.html',{
-        'products': objects
+        'products': objects,
+
         })
     def post(self, request, *args, **kwargs):
         return render(request, 'products/index.html')

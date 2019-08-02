@@ -1,5 +1,22 @@
 {%extends 'products/temp.html'%}
+{%load staticfiles%}
+{%block head%}
+
+{%endblock%}
 
 {%block content%}
-  <div>Shop</div>
+
+
+  {%for product in products%}
+
+
+    <div class="products">
+    <h5>{{product.name}}</h5>
+    <p>{{product.short_description}}</p>
+    <span>{{product.price}}</span>
+    <p>{{product.buy_count}}</p>
+    <button >Buy</button>
+</div>
+
+  {%endfor%}
 {%endblock%}

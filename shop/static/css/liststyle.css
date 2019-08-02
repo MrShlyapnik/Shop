@@ -1,0 +1,23 @@
+.products{
+  float: left;
+  width: 180px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 4px;
+  box-shadow: 4px 4px 10px 3px grey;
+}
+
+
+
+header{
+
+     display:inline-block;
+     width: 100%;
+     background: #2c3e50;
+     color: #fff;
+}
+body{
+  margin:0;
+  padding:0;
+}

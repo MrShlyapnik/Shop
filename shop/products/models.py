@@ -4,6 +4,7 @@ from django.db import models
 
 class Product(models.Model):
     name=models.CharField(max_length=128)
+    short_description=models.CharField(max_length=32)
     description=models.TextField()
     price=models.IntegerField()
     supplier=models.CharField(max_length=64)
