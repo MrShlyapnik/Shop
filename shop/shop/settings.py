@@ -39,15 +39,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'products',
     'registration',
-    'profilesett'
+    'profilesett',
+    #'django.contrib.sites',
 
 ]
 REGISTRATION_OPEN = True                # If True, users can register
 ACCOUNT_ACTIVATION_DAYS = 7     # One-week activation window; you may, of course, use a different value.
 REGISTRATION_AUTO_LOGIN = True  # If True, the user will be automatically logged in.
-LOGIN_REDIRECT_URL = '/rango/'  # The page you want users to arrive at after they successful log in
-LOGIN_URL = '/accounts/login/'  # The page users are directed to if they are not logged in,
-                                                                # and are trying to access pages requiring authentication
+LOGIN_REDIRECT_URL = '/store/'  # The page you want users to arrive at after they successful log in
+LOGIN_URL = '/store/'  # The page users are directed to if they are not logged in,
+SIMPLE_BACKEND_REDIRECT_URL      ='/store'                              # and are trying to access pages requiring authentication
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -113,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'RU-ru'
 
 TIME_ZONE = 'UTC'
 

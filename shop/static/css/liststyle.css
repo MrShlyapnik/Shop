@@ -1,4 +1,5 @@
 body{
+
   margin:0;
   padding:0;
 }
@@ -15,9 +16,16 @@ header{
 
      display:inline-block;
      width: 100%;
-     background: #2c3e50;
-     color: #fff;
-
+     background: rgba(253,241,211,1);
+     background-image: background-image: background: -webkit-linear-gradient(left, rgba(253,241,211,1) 0%, rgba(253,212,99,1) 9%, rgba(255,190,10,1) 51%, rgba(252,230,171,1) 100%);
+     background-image: background-image: background: -o-linear-gradient(left, rgba(253,241,211,1) 0%, rgba(253,212,99,1) 9%, rgba(255,190,10,1) 51%, rgba(252,230,171,1) 100%);
+     background-image: background-image: background: linear-gradient(to right, rgba(253,241,211,1) 0%, rgba(253,212,99,1) 9%, rgba(255,190,10,1) 51%, rgba(252,230,171,1) 100%);
+     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(253,241,211,1)), color-stop(9%, rgba(253,212,99,1)), color-stop(51%, rgba(255,190,10,1)), color-stop(100%, rgba(252,230,171,1)));
+     background: -webkit-linear-gradient(left, rgba(253,241,211,1) 0%, rgba(253,212,99,1) 9%, rgba(255,190,10,1) 51%, rgba(252,230,171,1) 100%);
+     background: -o-linear-gradient(left, rgba(253,241,211,1) 0%, rgba(253,212,99,1) 9%, rgba(255,190,10,1) 51%, rgba(252,230,171,1) 100%);
+     background: -ms-linear-gradient(left, rgba(253,241,211,1) 0%, rgba(253,212,99,1) 9%, rgba(255,190,10,1) 51%, rgba(252,230,171,1) 100%);
+     background: linear-gradient(to right, rgba(253,241,211,1) 0%, rgba(253,212,99,1) 9%, rgba(255,190,10,1) 51%, rgba(252,230,171,1) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdf1d3', endColorstr='#fce6ab', GradientType=1 );
 }
 #registration{
   float: right;

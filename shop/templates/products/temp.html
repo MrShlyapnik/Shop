@@ -15,8 +15,10 @@
 
 <header>
   <h1>Internet Shop</h1>
-  <span id="registration">Registration</span>
-  <span id="login">Login</span>
+  <a href="/accounts/register"><span id="registration">Registration</span></a>
+  {%if user.is_auntificated()%}
+  <a href="/accounts/login/"><span id="login">Login</span></a>
+  {%endif%}
 </header>
   {%block content%}
 
