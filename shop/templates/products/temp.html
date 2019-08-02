@@ -15,10 +15,8 @@
 
 <header>
   <h1>Internet Shop</h1>
-
-  {%if !user.is_authenticated()%}
-    <span>Login</span>
-  {%endif%}
+  <span id="registration">Registration</span>
+  <span id="login">Login</span>
 </header>
   {%block content%}
 
