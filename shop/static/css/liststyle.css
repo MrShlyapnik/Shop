@@ -31,7 +31,11 @@ header{
   float: right;
   margin-left: 3px;
 }
-#login{
+#login {
+  margin-right:2px;
+  float: right;
+}
+#logout{
   margin-right:2px;
   float: right;
 }
