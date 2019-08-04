@@ -15,11 +15,14 @@
 
 <header>
   <a href="/store/" style="color: black;"><h1>Internet Shop</h1></a>
-  <a href="/accounts/register"><span id="registration">Registration</span></a>
+
+
   {%if user.is_active%}
   <a href="/accounts/logout/"><span id="logout">Logout</span></a>
   {%else%}
+    <a href="/accounts/register"><span id="registration">Registration</span></a>
   <a href="/accounts/login/"><span id="login">Login</span></a>
+
   {%endif%}
 </header>
 

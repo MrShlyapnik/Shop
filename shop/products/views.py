@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from .models import Product
 # Create your views here.
 
@@ -14,3 +14,12 @@ class IndexList(ListView):
         })
     def post(self, request, *args, **kwargs):
         return render(request, 'products/index.html')
+
+class Towar(DetailView):
+    model=Product
+
+    def get(self, request, *args, **kwargs):
+
+
+
+        return render(request, 'products/product.html')
