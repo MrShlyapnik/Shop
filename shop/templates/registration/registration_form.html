@@ -1,11 +1,20 @@
 {%extends 'products/temp.html'%}
 {%load staticfiles%}
+{%block head%}
+<link rel="stylesheet" href="{%static 'css/liststyle.css'%}">
+{%endblock%}
 {%block content%}
-  <h1>Register here</h1>
-  <form method="post" action=".">
+<div id='register_page'>
+  <h3>Register here</h1>
+  <form method="post" action="">
                 {% csrf_token %}
-                {{ form.as_table }}
-
+                <div id='register_form'>
+                <p>Ваше имя: {{form.username}}</p>
+                <p>Email: {{form.email}}</p>
+                <p>Пароль: {{form.password1}}</p>
+                <p>Подтвердите пароль: {{form.password2}}</p>
                 <input type="submit" value="Submit" />
+                </div>
         </form>
+</div>
 {%endblock%}

@@ -13,7 +13,8 @@ body{
   box-shadow: 4px 4px 10px 3px grey;
 }
 header{
-
+      margin: 0;
+      padding: 0;
      display:inline-block;
      width: 100%;
      background: rgba(253,241,211,1);
@@ -38,4 +39,22 @@ header{
 #logout{
   margin-right:2px;
   float: right;
+}
+#register_form{
+  border: 1px solid grey;
+  width: 200px;
+  margin-left: 40%;
+  padding-left:8px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px 2px grey;
+  padding-bottom: 8px;
+}
+#register_page{
+
+  margin: 0;
+  padding: 0;
+
+}
+#register_page>h3{
+  margin-left:40%;
 }
